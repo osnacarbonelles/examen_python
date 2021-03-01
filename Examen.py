@@ -93,20 +93,21 @@ y 30% Cedro. Que cantidad de hectáreas le corresponde sembrar al
 Gobierno de Pino, Oyamel y Cedro.
 """
 numero_hectareas = int(input('Digite el numero de Hectáreas: '))
+metros_cuadrados = numero_hectareas * 10000  # 1 Hectárea es igual a 10mil m^2
 if numero_hectareas > 5:
-    pino = numero_hectareas * 0.80
-    oyamel = numero_hectareas * 0.15
-    cedro = numero_hectareas * 0.05
+    pino = metros_cuadrados * 0.80
+    oyamel = metros_cuadrados * 0.15
+    cedro = metros_cuadrados * 0.05
 else:
-    pino = numero_hectareas * 0.45
-    oyamel = numero_hectareas * 0.25
-    cedro = numero_hectareas * 0.30
+    pino = metros_cuadrados * 0.45
+    oyamel = metros_cuadrados * 0.25
+    cedro = metros_cuadrados * 0.30
 print(f'El numero de Pinos que se pueden sembrar en ')
-print(f'{numero_hectareas} Hectáreas es: {pino}')
+print(f'{numero_hectareas} Hectáreas es: {pino:,}')
 print(f'El numero de Pinos que se pueden sembrar en ')
-print(f'{numero_hectareas} Hectáreas es: {oyamel}')
+print(f'{numero_hectareas} Hectáreas es: {oyamel:,}')
 print(f'El numero de Pinos que se pueden sembrar en ')
-print(f'{numero_hectareas} Hectáreas es: {cedro}')
+print(f'{numero_hectareas} Hectáreas es: {cedro:,}')
 
 
 """
