@@ -102,11 +102,11 @@ else:
     pino = metros_cuadrados * 0.45
     oyamel = metros_cuadrados * 0.25
     cedro = metros_cuadrados * 0.30
-print(f'El numero de Pinos que se pueden sembrar en ')
+print('El numero de Pinos que se pueden sembrar en ')
 print(f'{numero_hectareas} Hectáreas es: {pino:,}')
-print(f'El numero de Pinos que se pueden sembrar en ')
+print('El numero de Oyamel que se pueden sembrar en ')
 print(f'{numero_hectareas} Hectáreas es: {oyamel:,}')
-print(f'El numero de Pinos que se pueden sembrar en ')
+print('El numero de Cedros que se pueden sembrar en ')
 print(f'{numero_hectareas} Hectáreas es: {cedro:,}')
 
 
